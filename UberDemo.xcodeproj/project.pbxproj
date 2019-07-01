@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA1DD45E22CA9599006A92B1 /* UberDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1DD45D22CA9599006A92B1 /* UberDemoTests.swift */; };
+		CAB89C1D22C917E6006501BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C1C22C917E6006501BE /* AppDelegate.swift */; };
+		CAB89C2222C917E6006501BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2022C917E6006501BE /* Main.storyboard */; };
+		CAB89C2422C917E9006501BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2322C917E9006501BE /* Assets.xcassets */; };
+		CAB89C2722C917E9006501BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2522C917E9006501BE /* LaunchScreen.storyboard */; };
+		CAB89C3022C92031006501BE /* UBSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C2F22C92031006501BE /* UBSearchVC.swift */; };
+		CAB89C3222C920ED006501BE /* UBListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3122C920ED006501BE /* UBListVC.swift */; };
+		CAB89C3822C92220006501BE /* ButtonEnablingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3722C92220006501BE /* ButtonEnablingBehavior.swift */; };
+		CAB89C3C22C9271A006501BE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3B22C9271A006501BE /* ImageCell.swift */; };
+		CAB89C3F22C927FA006501BE /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3E22C927FA006501BE /* AlertDisplayer.swift */; };
+		CAB89C4222C92874006501BE /* UBListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4122C92874006501BE /* UBListVM.swift */; };
+		CAB89C4522C9293E006501BE /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4422C9293E006501BE /* PhotosModel.swift */; };
+		CAB89C4822C92BEF006501BE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4722C92BEF006501BE /* APIClient.swift */; };
+		CAB89C4A22C92C78006501BE /* UBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4922C92C78006501BE /* UBRequest.swift */; };
+		CAB89C4C22C92D05006501BE /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4B22C92D05006501BE /* URLRequest.swift */; };
+		CAB89C4E22C92E30006501BE /* DataResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4D22C92E30006501BE /* DataResponseError.swift */; };
+		CAB89C5122C92EA4006501BE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4F22C92EA4006501BE /* String+Extensions.swift */; };
+		CAB89C5222C92EA4006501BE /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C5022C92EA4006501BE /* UITextField+Extensions.swift */; };
+		CAB89C5422C92F2F006501BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C5322C92F2F006501BE /* Result.swift */; };
+		CAB89C5622C92F66006501BE /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C5522C92F66006501BE /* HTTPURLResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA1DD46022CA9599006A92B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB89C1122C917E6006501BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAB89C1822C917E6006501BE;
+			remoteInfo = UberDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA1DD45B22CA9599006A92B1 /* UberDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1DD45D22CA9599006A92B1 /* UberDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberDemoTests.swift; sourceTree = "<group>"; };
+		CA1DD45F22CA9599006A92B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB89C1922C917E6006501BE /* UberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB89C1C22C917E6006501BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAB89C2122C917E6006501BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAB89C2322C917E9006501BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAB89C2622C917E9006501BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAB89C2822C917E9006501BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB89C2F22C92031006501BE /* UBSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBSearchVC.swift; sourceTree = "<group>"; };
+		CAB89C3122C920ED006501BE /* UBListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBListVC.swift; sourceTree = "<group>"; };
+		CAB89C3722C92220006501BE /* ButtonEnablingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonEnablingBehavior.swift; sourceTree = "<group>"; };
+		CAB89C3B22C9271A006501BE /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		CAB89C3E22C927FA006501BE /* AlertDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
+		CAB89C4122C92874006501BE /* UBListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBListVM.swift; sourceTree = "<group>"; };
+		CAB89C4422C9293E006501BE /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		CAB89C4722C92BEF006501BE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CAB89C4922C92C78006501BE /* UBRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBRequest.swift; sourceTree = "<group>"; };
+		CAB89C4B22C92D05006501BE /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		CAB89C4D22C92E30006501BE /* DataResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseError.swift; sourceTree = "<group>"; };
+		CAB89C4F22C92EA4006501BE /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CAB89C5022C92EA4006501BE /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		CAB89C5322C92F2F006501BE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CAB89C5522C92F66006501BE /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA1DD45822CA9599006A92B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB89C1622C917E6006501BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA1DD45C22CA9599006A92B1 /* UberDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA1DD45D22CA9599006A92B1 /* UberDemoTests.swift */,
+				CA1DD45F22CA9599006A92B1 /* Info.plist */,
+			);
+			path = UberDemoTests;
+			sourceTree = "<group>";
+		};
+		CAB89C1022C917E6006501BE = {
+			isa = PBXGroup;
+			children = (
+				CAB89C1B22C917E6006501BE /* UberDemo */,
+				CA1DD45C22CA9599006A92B1 /* UberDemoTests */,
+				CAB89C1A22C917E6006501BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAB89C1A22C917E6006501BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C1922C917E6006501BE /* UberDemo.app */,
+				CA1DD45B22CA9599006A92B1 /* UberDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB89C1B22C917E6006501BE /* UberDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C4622C92BDE006501BE /* Networking */,
+				CAB89C4322C92909006501BE /* Models */,
+				CAB89C4022C92851006501BE /* ViewModels */,
+				CAB89C3D22C927D1006501BE /* Extensions */,
+				CAB89C3922C926DA006501BE /* Views */,
+				CAB89C3322C921DC006501BE /* Behaviors */,
+				CAB89C2E22C91FF1006501BE /* ViewControllers */,
+				CAB89C1C22C917E6006501BE /* AppDelegate.swift */,
+				CAB89C2322C917E9006501BE /* Assets.xcassets */,
+				CAB89C2522C917E9006501BE /* LaunchScreen.storyboard */,
+				CAB89C2822C917E9006501BE /* Info.plist */,
+			);
+			path = UberDemo;
+			sourceTree = "<group>";
+		};
+		CAB89C2E22C91FF1006501BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C2F22C92031006501BE /* UBSearchVC.swift */,
+				CAB89C3122C920ED006501BE /* UBListVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CAB89C3322C921DC006501BE /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C3722C92220006501BE /* ButtonEnablingBehavior.swift */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		CAB89C3922C926DA006501BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C3A22C926FC006501BE /* Cells */,
+				CAB89C2022C917E6006501BE /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAB89C3A22C926FC006501BE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C3B22C9271A006501BE /* ImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CAB89C3D22C927D1006501BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C4F22C92EA4006501BE /* String+Extensions.swift */,
+				CAB89C5022C92EA4006501BE /* UITextField+Extensions.swift */,
+				CAB89C3E22C927FA006501BE /* AlertDisplayer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CAB89C4022C92851006501BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C4122C92874006501BE /* UBListVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CAB89C4322C92909006501BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C4422C9293E006501BE /* PhotosModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAB89C4622C92BDE006501BE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CAB89C4D22C92E30006501BE /* DataResponseError.swift */,
+				CAB89C4B22C92D05006501BE /* URLRequest.swift */,
+				CAB89C4722C92BEF006501BE /* APIClient.swift */,
+				CAB89C4922C92C78006501BE /* UBRequest.swift */,
+				CAB89C5322C92F2F006501BE /* Result.swift */,
+				CAB89C5522C92F66006501BE /* HTTPURLResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA1DD45A22CA9599006A92B1 /* UberDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1DD46222CA9599006A92B1 /* Build configuration list for PBXNativeTarget "UberDemoTests" */;
+			buildPhases = (
+				CA1DD45722CA9599006A92B1 /* Sources */,
+				CA1DD45822CA9599006A92B1 /* Frameworks */,
+				CA1DD45922CA9599006A92B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA1DD46122CA9599006A92B1 /* PBXTargetDependency */,
+			);
+			name = UberDemoTests;
+			productName = UberDemoTests;
+			productReference = CA1DD45B22CA9599006A92B1 /* UberDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAB89C1822C917E6006501BE /* UberDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB89C2B22C917E9006501BE /* Build configuration list for PBXNativeTarget "UberDemo" */;
+			buildPhases = (
+				CAB89C1522C917E6006501BE /* Sources */,
+				CAB89C1622C917E6006501BE /* Frameworks */,
+				CAB89C1722C917E6006501BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UberDemo;
+			productName = UberDemo;
+			productReference = CAB89C1922C917E6006501BE /* UberDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAB89C1122C917E6006501BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sumit Jain";
+				TargetAttributes = {
+					CA1DD45A22CA9599006A92B1 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CAB89C1822C917E6006501BE;
+					};
+					CAB89C1822C917E6006501BE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = CAB89C1422C917E6006501BE /* Build configuration list for PBXProject "UberDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAB89C1022C917E6006501BE;
+			productRefGroup = CAB89C1A22C917E6006501BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAB89C1822C917E6006501BE /* UberDemo */,
+				CA1DD45A22CA9599006A92B1 /* UberDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA1DD45922CA9599006A92B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB89C1722C917E6006501BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB89C2722C917E9006501BE /* LaunchScreen.storyboard in Resources */,
+				CAB89C2422C917E9006501BE /* Assets.xcassets in Resources */,
+				CAB89C2222C917E6006501BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA1DD45722CA9599006A92B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1DD45E22CA9599006A92B1 /* UberDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB89C1522C917E6006501BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB89C4A22C92C78006501BE /* UBRequest.swift in Sources */,
+				CAB89C5122C92EA4006501BE /* String+Extensions.swift in Sources */,
+				CAB89C5622C92F66006501BE /* HTTPURLResponse.swift in Sources */,
+				CAB89C3F22C927FA006501BE /* AlertDisplayer.swift in Sources */,
+				CAB89C1D22C917E6006501BE /* AppDelegate.swift in Sources */,
+				CAB89C4522C9293E006501BE /* PhotosModel.swift in Sources */,
+				CAB89C3222C920ED006501BE /* UBListVC.swift in Sources */,
+				CAB89C5422C92F2F006501BE /* Result.swift in Sources */,
+				CAB89C3022C92031006501BE /* UBSearchVC.swift in Sources */,
+				CAB89C5222C92EA4006501BE /* UITextField+Extensions.swift in Sources */,
+				CAB89C4222C92874006501BE /* UBListVM.swift in Sources */,
+				CAB89C4C22C92D05006501BE /* URLRequest.swift in Sources */,
+				CAB89C3822C92220006501BE /* ButtonEnablingBehavior.swift in Sources */,
+				CAB89C4E22C92E30006501BE /* DataResponseError.swift in Sources */,
+				CAB89C3C22C9271A006501BE /* ImageCell.swift in Sources */,
+				CAB89C4822C92BEF006501BE /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA1DD46122CA9599006A92B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAB89C1822C917E6006501BE /* UberDemo */;
+			targetProxy = CA1DD46022CA9599006A92B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAB89C2022C917E6006501BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB89C2122C917E6006501BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAB89C2522C917E9006501BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB89C2622C917E9006501BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA1DD46322CA9599006A92B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.image.upload.UberDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberDemo.app/UberDemo";
+			};
+			name = Debug;
+		};
+		CA1DD46422CA9599006A92B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.image.upload.UberDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberDemo.app/UberDemo";
+			};
+			name = Release;
+		};
+		CAB89C2922C917E9006501BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAB89C2A22C917E9006501BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAB89C2C22C917E9006501BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.image.upload.UberDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAB89C2D22C917E9006501BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.image.upload.UberDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA1DD46222CA9599006A92B1 /* Build configuration list for PBXNativeTarget "UberDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1DD46322CA9599006A92B1 /* Debug */,
+				CA1DD46422CA9599006A92B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB89C1422C917E6006501BE /* Build configuration list for PBXProject "UberDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB89C2922C917E9006501BE /* Debug */,
+				CAB89C2A22C917E9006501BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB89C2B22C917E9006501BE /* Build configuration list for PBXNativeTarget "UberDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB89C2C22C917E9006501BE /* Debug */,
+				CAB89C2D22C917E9006501BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAB89C1122C917E6006501BE /* Project object */;
+}
