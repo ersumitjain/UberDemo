@@ -11,7 +11,7 @@ import UIKit
 
 final class APIClient {
     private lazy var baseURL: URL = {
-        return URL(string: "https://api.flickr.com/services")!
+        return URL(string: UBConstants.baseURL)!
     }()
     
     let session: URLSession

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA1DD45E22CA9599006A92B1 /* UberDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1DD45D22CA9599006A92B1 /* UberDemoTests.swift */; };
+		CA4B765022CF3D8D0013C601 /* UBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4B764F22CF3D8D0013C601 /* UBConstants.swift */; };
 		CAB89C1D22C917E6006501BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C1C22C917E6006501BE /* AppDelegate.swift */; };
 		CAB89C2222C917E6006501BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2022C917E6006501BE /* Main.storyboard */; };
 		CAB89C2422C917E9006501BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2322C917E9006501BE /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		CA1DD45B22CA9599006A92B1 /* UberDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1DD45D22CA9599006A92B1 /* UberDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberDemoTests.swift; sourceTree = "<group>"; };
 		CA1DD45F22CA9599006A92B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4B764F22CF3D8D0013C601 /* UBConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UBConstants.swift; sourceTree = "<group>"; };
 		CAB89C1922C917E6006501BE /* UberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB89C1C22C917E6006501BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB89C2122C917E6006501BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			path = UberDemoTests;
 			sourceTree = "<group>";
 		};
+		CA4B764E22CF3D8D0013C601 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CA4B764F22CF3D8D0013C601 /* UBConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		CAB89C1022C917E6006501BE = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 		CAB89C1B22C917E6006501BE /* UberDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA4B764E22CF3D8D0013C601 /* Constants */,
 				CAB89C4622C92BDE006501BE /* Networking */,
 				CAB89C4322C92909006501BE /* Models */,
 				CAB89C4022C92851006501BE /* ViewModels */,
@@ -327,6 +338,7 @@
 				CAB89C4E22C92E30006501BE /* DataResponseError.swift in Sources */,
 				CAB89C3C22C9271A006501BE /* ImageCell.swift in Sources */,
 				CAB89C4822C92BEF006501BE /* APIClient.swift in Sources */,
+				CA4B765022CF3D8D0013C601 /* UBConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

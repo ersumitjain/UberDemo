@@ -15,9 +15,9 @@ enum DataResponseError: Error {
   var reason: String {
     switch self {
     case .network:
-      return "An error occurred while fetching data ".localizedString
+      return UBConstants.networkError.localizedString
     case .decoding:
-      return "An error occurred while decoding data".localizedString
+      return UBConstants.debugError.localizedString
     }
   }
 }
