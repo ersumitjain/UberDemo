@@ -12,9 +12,9 @@ class UBSearchVC: UIViewController {
     
     //MARK: SegueIdentifiers
     private enum SegueIdentifiers {
-        static let list = "ListSegue"
+        static let photos = "photosSegue"
     }
-
+    
     //MARK: Outlets
     @IBOutlet private weak var searchTextField: UITextField!
     @IBOutlet private weak var searchButton: UIButton!
@@ -38,11 +38,11 @@ class UBSearchVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == SegueIdentifiers.list {
-            if let listvc = segue.destination as? UBListVC {
-                listvc.searchString = searchTextField.text
+        if segue.identifier == SegueIdentifiers.photos {
+            if let photovc = segue.destination as? PhotosVC {
+                photovc.searchString = searchTextField.text
             }
         }
     }
-
+    
 }

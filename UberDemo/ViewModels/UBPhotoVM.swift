@@ -1,20 +1,20 @@
 //
-//  UBListVM.swift
+//  UBPhotoVM.swift
 //  UberDemo
 //
-//  Created by Sumit Jain on 30/06/19.
+//  Created by Sumit Jain on 08/07/19.
 //  Copyright © 2019 Sumit Jain. All rights reserved.
 //
 
 import Foundation
 
-protocol ListVMDelegate: class {
+protocol PhotoVMDelegate: class {
     func onFetchCompleted(with newIndexPathsToReload: [IndexPath]?)
     func onFetchFailed(with reason: String)
 }
 
-final class UBListVM {
-    private weak var delegate: ListVMDelegate?
+final class UBPhotoVM {
+    private weak var delegate: PhotoVMDelegate?
     private var PhotosListModel: [PhotosList] = []
     private var currentPage = 1
     private var total = 0
@@ -23,7 +23,7 @@ final class UBListVM {
     let client = APIClient()
     let request: UBRequest
     
-    init(request: UBRequest, delegate: ListVMDelegate) {
+    init(request: UBRequest, delegate: PhotoVMDelegate) {
         self.request = request
         self.delegate = delegate
     }

@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CA1DD45E22CA9599006A92B1 /* UberDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1DD45D22CA9599006A92B1 /* UberDemoTests.swift */; };
+		CA2C124B22D1F36E00AB8505 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2C124A22D1F36E00AB8505 /* PhotosVC.swift */; };
+		CA2C124D22D1F3F500AB8505 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2C124C22D1F3F500AB8505 /* PhotosCell.swift */; };
+		CA2C124F22D255A900AB8505 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2C124E22D255A900AB8505 /* Color+Extension.swift */; };
+		CA2C125122D27A4E00AB8505 /* UBPhotoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2C125022D27A4E00AB8505 /* UBPhotoVM.swift */; };
 		CA4B765022CF3D8D0013C601 /* UBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4B764F22CF3D8D0013C601 /* UBConstants.swift */; };
 		CAB89C1D22C917E6006501BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C1C22C917E6006501BE /* AppDelegate.swift */; };
 		CAB89C2222C917E6006501BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2022C917E6006501BE /* Main.storyboard */; };
 		CAB89C2422C917E9006501BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2322C917E9006501BE /* Assets.xcassets */; };
 		CAB89C2722C917E9006501BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB89C2522C917E9006501BE /* LaunchScreen.storyboard */; };
 		CAB89C3022C92031006501BE /* UBSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C2F22C92031006501BE /* UBSearchVC.swift */; };
-		CAB89C3222C920ED006501BE /* UBListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3122C920ED006501BE /* UBListVC.swift */; };
 		CAB89C3822C92220006501BE /* ButtonEnablingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3722C92220006501BE /* ButtonEnablingBehavior.swift */; };
-		CAB89C3C22C9271A006501BE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3B22C9271A006501BE /* ImageCell.swift */; };
 		CAB89C3F22C927FA006501BE /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C3E22C927FA006501BE /* AlertDisplayer.swift */; };
-		CAB89C4222C92874006501BE /* UBListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4122C92874006501BE /* UBListVM.swift */; };
 		CAB89C4522C9293E006501BE /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4422C9293E006501BE /* PhotosModel.swift */; };
 		CAB89C4822C92BEF006501BE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4722C92BEF006501BE /* APIClient.swift */; };
 		CAB89C4A22C92C78006501BE /* UBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB89C4922C92C78006501BE /* UBRequest.swift */; };
@@ -44,6 +45,10 @@
 		CA1DD45B22CA9599006A92B1 /* UberDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1DD45D22CA9599006A92B1 /* UberDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberDemoTests.swift; sourceTree = "<group>"; };
 		CA1DD45F22CA9599006A92B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2C124A22D1F36E00AB8505 /* PhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		CA2C124C22D1F3F500AB8505 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+		CA2C124E22D255A900AB8505 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		CA2C125022D27A4E00AB8505 /* UBPhotoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBPhotoVM.swift; sourceTree = "<group>"; };
 		CA4B764F22CF3D8D0013C601 /* UBConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UBConstants.swift; sourceTree = "<group>"; };
 		CAB89C1922C917E6006501BE /* UberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB89C1C22C917E6006501BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,11 +57,8 @@
 		CAB89C2622C917E9006501BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB89C2822C917E9006501BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB89C2F22C92031006501BE /* UBSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBSearchVC.swift; sourceTree = "<group>"; };
-		CAB89C3122C920ED006501BE /* UBListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBListVC.swift; sourceTree = "<group>"; };
 		CAB89C3722C92220006501BE /* ButtonEnablingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonEnablingBehavior.swift; sourceTree = "<group>"; };
-		CAB89C3B22C9271A006501BE /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		CAB89C3E22C927FA006501BE /* AlertDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
-		CAB89C4122C92874006501BE /* UBListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBListVM.swift; sourceTree = "<group>"; };
 		CAB89C4422C9293E006501BE /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
 		CAB89C4722C92BEF006501BE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CAB89C4922C92C78006501BE /* UBRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBRequest.swift; sourceTree = "<group>"; };
@@ -144,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB89C2F22C92031006501BE /* UBSearchVC.swift */,
-				CAB89C3122C920ED006501BE /* UBListVC.swift */,
+				CA2C124A22D1F36E00AB8505 /* PhotosVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -169,7 +171,7 @@
 		CAB89C3A22C926FC006501BE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CAB89C3B22C9271A006501BE /* ImageCell.swift */,
+				CA2C124C22D1F3F500AB8505 /* PhotosCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -180,6 +182,7 @@
 				CAB89C4F22C92EA4006501BE /* String+Extensions.swift */,
 				CAB89C5022C92EA4006501BE /* UITextField+Extensions.swift */,
 				CAB89C3E22C927FA006501BE /* AlertDisplayer.swift */,
+				CA2C124E22D255A900AB8505 /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,7 +190,7 @@
 		CAB89C4022C92851006501BE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CAB89C4122C92874006501BE /* UBListVM.swift */,
+				CA2C125022D27A4E00AB8505 /* UBPhotoVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -323,22 +326,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB89C4A22C92C78006501BE /* UBRequest.swift in Sources */,
+				CA2C124B22D1F36E00AB8505 /* PhotosVC.swift in Sources */,
 				CAB89C5122C92EA4006501BE /* String+Extensions.swift in Sources */,
+				CA2C124D22D1F3F500AB8505 /* PhotosCell.swift in Sources */,
 				CAB89C5622C92F66006501BE /* HTTPURLResponse.swift in Sources */,
 				CAB89C3F22C927FA006501BE /* AlertDisplayer.swift in Sources */,
 				CAB89C1D22C917E6006501BE /* AppDelegate.swift in Sources */,
 				CAB89C4522C9293E006501BE /* PhotosModel.swift in Sources */,
-				CAB89C3222C920ED006501BE /* UBListVC.swift in Sources */,
 				CAB89C5422C92F2F006501BE /* Result.swift in Sources */,
 				CAB89C3022C92031006501BE /* UBSearchVC.swift in Sources */,
+				CA2C124F22D255A900AB8505 /* Color+Extension.swift in Sources */,
 				CAB89C5222C92EA4006501BE /* UITextField+Extensions.swift in Sources */,
-				CAB89C4222C92874006501BE /* UBListVM.swift in Sources */,
 				CAB89C4C22C92D05006501BE /* URLRequest.swift in Sources */,
 				CAB89C3822C92220006501BE /* ButtonEnablingBehavior.swift in Sources */,
 				CAB89C4E22C92E30006501BE /* DataResponseError.swift in Sources */,
-				CAB89C3C22C9271A006501BE /* ImageCell.swift in Sources */,
 				CAB89C4822C92BEF006501BE /* APIClient.swift in Sources */,
 				CA4B765022CF3D8D0013C601 /* UBConstants.swift in Sources */,
+				CA2C125122D27A4E00AB8505 /* UBPhotoVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

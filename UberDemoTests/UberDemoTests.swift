@@ -11,15 +11,30 @@ import XCTest
 
 class UberDemoTests: XCTestCase {
     
-    var viewModel: UBListVM?
+    var viewModel: UBPhotoVM?
     var expectation: XCTestExpectation?
+    var request: UBRequest!
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+         request = UBRequest.from(text: "kittens")
+        viewModel = UBPhotoVM(request: request, delegate: self)
+    }
+    
+    func testValidCallToGetStatusCode200() {
+        let promise = expectation(description: "Status code: 200")
+        viewModel?.client.fetchPhotos(with: request, page: 1){ result in
+            switch result {
+            case .failure(let error):
+                XCTFail("Error: \(error.localizedDescription)")
+                return
+            case .success(_):
+                promise.fulfill()
+            }
+        }
+        wait(for: [promise], timeout: 40)
     }
     
     func testListSuccess(){
-        let request = UBRequest.from(text: "kittens")
-        viewModel = UBListVM(request: request, delegate: self)
         XCTAssertTrue(viewModel?.currentCount == 0)
         expectation = self.expectation(description: "Response")
         viewModel?.fetchPhotos()
@@ -29,8 +44,8 @@ class UberDemoTests: XCTestCase {
     }
     
     func testListfailure(){
-        let request = UBRequest.from(text: "kittexzxzxzxns")
-        viewModel = UBListVM(request: request, delegate: self)
+        request = UBRequest.from(text: "kittexzxzxzxns")
+        viewModel = UBPhotoVM(request: request, delegate: self)
         expectation = self.expectation(description: "Response")
         viewModel?.fetchPhotos()
         waitForExpectations(timeout: 40, handler: nil)
@@ -40,21 +55,11 @@ class UberDemoTests: XCTestCase {
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        viewModel = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 }
-extension UberDemoTests: ListVMDelegate{
+extension UberDemoTests: PhotoVMDelegate{
     func onFetchCompleted(with newIndexPathsToReload: [IndexPath]?) {
         expectation?.fulfill()
     }

@@ -1,17 +1,16 @@
 //
-//  ImageCell.swift
+//  PhotosCell.swift
 //  UberDemo
 //
-//  Created by Sumit Jain on 30/06/19.
+//  Created by Sumit Jain on 07/07/19.
 //  Copyright © 2019 Sumit Jain. All rights reserved.
 //
 
 import UIKit
 
-class ImageCell: UITableViewCell {
-    //MARK: Outlets
-    @IBOutlet private weak var imgView          : UIImageView!
-    @IBOutlet private weak var indicatorView    : UIActivityIndicatorView!
+class PhotosCell: UICollectionViewCell {
+    
+    @IBOutlet weak var imgView: UIImageView!
     
     //MARK: Lifecycle Methods
     override func prepareForReuse() {
@@ -22,14 +21,8 @@ class ImageCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        indicatorView.hidesWhenStopped = true
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    override func layoutSubviews() {
+        imgView.backgroundColor = UIColor.random
+        
     }
     
     func configure(with photosList: PhotosList?) {
@@ -44,9 +37,6 @@ class ImageCell: UITableViewCell {
                     self?.imgView.image = img
                 }
             }
-            indicatorView.stopAnimating()
-        } else {
-            indicatorView.startAnimating()
         }
     }
 }
