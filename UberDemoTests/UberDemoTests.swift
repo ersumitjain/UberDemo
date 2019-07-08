@@ -20,7 +20,7 @@ class UberDemoTests: XCTestCase {
         viewModel = UBPhotoVM(request: request, delegate: self)
     }
     
-    func testValidCallToGetStatusCode200() {
+    func testSuccessResponse() {
         let promise = expectation(description: "Status code: 200")
         viewModel?.client.fetchPhotos(with: request, page: 1){ result in
             switch result {
@@ -34,7 +34,7 @@ class UberDemoTests: XCTestCase {
         wait(for: [promise], timeout: 40)
     }
     
-    func testListSuccess(){
+    func testValidResponse(){
         XCTAssertTrue(viewModel?.currentCount == 0)
         expectation = self.expectation(description: "Response")
         viewModel?.fetchPhotos()
@@ -43,7 +43,7 @@ class UberDemoTests: XCTestCase {
         XCTAssertTrue((viewModel?.currentCount)! > 1)
     }
     
-    func testListfailure(){
+    func testEmptyResponse(){
         request = UBRequest.from(text: "kittexzxzxzxns")
         viewModel = UBPhotoVM(request: request, delegate: self)
         expectation = self.expectation(description: "Response")
